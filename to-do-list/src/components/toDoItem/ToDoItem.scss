@@ -1,0 +1,63 @@
+@import '../../assets/color/color';
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+
+  .info {
+    position: relative;
+
+    .edit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      flex-direction: row;
+      z-index: 1;
+
+      .editToDo {
+        width: 460px;
+        height: 30px;
+        border: 1px solid $gray;
+        border-radius: 10px;
+        outline: none;
+        padding: 10px;
+        margin-right: 20px;
+      }
+
+      .subButton {
+        height: 30px;
+        padding: 0 20px;
+        border: 1px solid $gray;
+        background: $gray;
+        color: $blackEdit;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    }
+    
+    .editView {
+      display: flex;
+    }
+
+    .label {
+      margin-left: 10px;
+    }
+  }
+
+  .iconBlock {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 90px;
+
+    .icon {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+}

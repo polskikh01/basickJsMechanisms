@@ -1,0 +1,9 @@
+@import "../../assets/color/color";
+
+.block {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding: 20px;
+  border-bottom: 1px solid $bb;
+}
